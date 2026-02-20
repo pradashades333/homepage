@@ -5,13 +5,17 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fafafa;
+    color: #333;
 }
+
+/* ---- INFO SECTION ---- */
 
 .info {
     display: flex;
     min-height: 60vh;
-    background-color: #758ddd;
+    background-color: #6366f1;
 }
 
 .info-image {
@@ -24,6 +28,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 .info-name {
@@ -31,8 +36,8 @@ body {
     bottom: 60px;
     left: 60px;
     color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
 .about-card {
@@ -40,18 +45,21 @@ body {
     background: white;
     padding: 60px;
     margin: 40px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border-left: 5px solid #6366f1;
 }
 
 .about-card h2 {
-    font-family: 'Playfair Display', serif;
     font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 20px;
+    color: #6366f1;
 }
 
 .about-card p {
     line-height: 1.8;
-    color: #666;
+    color: #555;
     margin-bottom: 30px;
 }
 
@@ -65,15 +73,18 @@ body {
     height: 30px;
 }
 
+/* ---- PROJECTS SECTION ---- */
+
 .projects {
     padding: 80px 60px;
-    background: #f5f5f5;
+    background: #f1f0fe;
 }
 
 .projects h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 50px;
+    color: #6366f1;
 }
 
 .projects-grid {
@@ -84,19 +95,26 @@ body {
 
 .project-card {
     background: white;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .project-image {
-    height: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.5rem;
-    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .project-info {
@@ -104,12 +122,13 @@ body {
 }
 
 .project-info h3 {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 10px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
 }
 
 .project-info p {
-    color: #666;
+    color: #777;
     font-size: 0.9rem;
     margin-bottom: 15px;
     line-height: 1.6;
@@ -125,9 +144,11 @@ body {
     height: 24px;
 }
 
+/* ---- CONTACT SECTION ---- */
+
 .contact {
     display: flex;
-    background: #0891b2;
+    background: #ec4899;
     color: white;
     min-height: 50vh;
 }
@@ -138,14 +159,15 @@ body {
 }
 
 .contact-info h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
 .contact-info > p {
     margin-bottom: 40px;
     font-size: 1.1rem;
+    opacity: 0.9;
 }
 
 .contact-details {
@@ -155,6 +177,7 @@ body {
 .contact-details p {
     margin-bottom: 15px;
     font-size: 1rem;
+    opacity: 0.9;
 }
 
 .contact .social-icons img {
@@ -170,4 +193,5 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
